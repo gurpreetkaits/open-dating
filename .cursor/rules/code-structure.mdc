@@ -1,0 +1,20 @@
+---
+alwaysApply: true
+---
+
+// Backend PHP Code Structure
+
+1. Always follow best code practices
+2. Use Manager directory to create Manager files (App\\Managers\\ExampleManager)
+3. Use Manager to handle business logic (no database request should made  through Manager)
+4. Use Service files (App\\Services\\ExampleService) to make Database request
+5. Controller should be used to consume and response 
+6. Pattern Should be Frontend -> Controller -> Manager -> Service/Model 
+7. Use LaravelData instead of passing arrays to method params (App\\Data\\ExampleData) 
+8. Less logs / no comments but use explaining variables / less console.log(frontend)
+
+
+// Frontend
+
+1. Any time you make an api call it should be like (Vue->Store->Service)
+2. Don't make api calls directly from vue files use store and then service
