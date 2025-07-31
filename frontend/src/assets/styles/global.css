@@ -173,6 +173,51 @@ html {
   /* We'll keep the white/dark theme as requested, but this is here for future enhancement */
 }
 
+/* Consistent spacing utilities */
+.spacing-xs { padding: 0.5rem; }
+.spacing-sm { padding: 0.75rem; }
+.spacing-md { padding: 1rem; }
+.spacing-lg { padding: 1.5rem; }
+.spacing-xl { padding: 2rem; }
+.spacing-2xl { padding: 3rem; }
+
+.gap-xs { gap: 0.5rem; }
+.gap-sm { gap: 0.75rem; }
+.gap-md { gap: 1rem; }
+.gap-lg { gap: 1.5rem; }
+.gap-xl { gap: 2rem; }
+
+/* Responsive spacing helpers */
+@media (max-width: 640px) {
+  .mobile-spacing-reduce {
+    padding: 0.75rem !important;
+  }
+  
+  .mobile-gap-reduce {
+    gap: 0.75rem !important;
+  }
+}
+
+/* Container spacing consistency */
+.container-spacing {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-spacing {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-spacing {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 /* Print styles */
 @media print {
   * {
